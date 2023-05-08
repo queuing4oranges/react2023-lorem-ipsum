@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=PT+Sans+Narrow&display=swap');
+
 /* ============= GLOBAL CSS =============== */
 
 *,
@@ -14,34 +16,10 @@ html {
 
 :root {
   /* colors */
-  --primary-100: #d1fae5;
-  --primary-200: #a7f3d0;
-  --primary-300: #6ee7b7;
-  --primary-400: #34d399;
-  --primary-500: #10b981;
-  --primary-600: #059669;
-  --primary-700: #047857;
-  --primary-800: #065f46;
-  --primary-900: #064e3b;
-
-  /* grey */
-  --grey-50: #f8fafc;
-  --grey-100: #f1f5f9;
-  --grey-200: #e2e8f0;
-  --grey-300: #cbd5e1;
-  --grey-400: #94a3b8;
-  --grey-500: #64748b;
-  --grey-600: #475569;
-  --grey-700: #334155;
-  --grey-800: #1e293b;
-  --grey-900: #0f172a;
-  /* rest of the colors */
-  --black: #222;
-  --white: #fff;
-  --red-light: #f8d7da;
-  --red-dark: #842029;
-  --green-light: #d1e7dd;
-  --green-dark: #0f5132;
+  --darkblue: #081012;
+  --lightblue:#4D8FC3;
+  --beige: #FFF3EB;
+  --rose: #EF8A84;
 
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
@@ -253,43 +231,74 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
-.section-center {
-  width: 80vw;
-  max-width: 40rem;
-  margin: 10rem auto;
+
+
+
+.container {
+  min-height: 100vh;
+  background-color: var(--rose);
 }
-.section-center h4 {
-  text-transform: uppercase;
+
+.lorem-title {
   text-align: center;
+  font-family: 'Inconsolata', monospace;
+  color:#081012 ;
+  background-color: var(--beige);
+  padding: 20px;
 }
-.lorem-form {
-  text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+
+.form-container {
+  padding: 25px;
+  background-color: var(--rose);
+  color: var(--black);
+  max-height: 100%;
+}
+
+.form-container form {
   display: flex;
-  justify-content: center;
+  max-width: 60%;
+  margin: 20px auto;
+  justify-content: space-around;
   align-items: center;
-  gap: 0.5rem;
-}
-.lorem-form label {
-  font-size: 1.25rem;
+  
 }
 
-.lorem-form input {
-  padding: 0.25rem 0.5rem;
-  width: 4rem;
-  border-radius: var(--borderRadius);
-  border-color: transparent;
-  background: var(--grey-300);
-  font-size: 1.25rem;
+.form-container label {
+  background-color: var(--beige);
+  border-radius: 3px;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
 }
 
-.lorem-form .btn {
-  align-self: stretch;
+.form-container input {
+  height: 25px;
+  border: var(--darkblue);
+  padding: 5px;
 }
 
-.lorem-text p {
-  line-height: 2;
-  margin-bottom: 2rem;
+.form-container input:focus{
+  outline: none;
 }
+
+.form-container p {
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 20px;
+  padding-top: 20px;
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+}
+
+.form-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px var(--beige) dotted;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+
+
